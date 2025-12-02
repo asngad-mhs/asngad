@@ -1,4 +1,3 @@
-
 import React, { useRef, useState, useEffect } from 'react';
 
 const About: React.FC = () => {
@@ -34,7 +33,7 @@ const About: React.FC = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-80 group">
                 <div className="absolute inset-0 bg-accent rounded-full transform rotate-6 transition-transform duration-500 group-hover:rotate-0 group-hover:scale-105"></div>
                 <img
-                  src="https://picsum.photos/400/400?grayscale"
+                  src="https://yt3.googleusercontent.com/ytc/AIdro_mECd8Bp82gx4hP5Ebezw_aBOChX5mDQdxQfrDl7MnRJAQ=s900-c-k-c0x00ffffff-no-rj"
                   alt="Asngad"
                   className="relative w-full h-full object-cover rounded-full shadow-2xl border-4 border-secondary transition-transform duration-500 group-hover:scale-95"
                 />
