@@ -48,15 +48,15 @@ const Testimonials: React.FC = () => {
 
     const testimonialsList = [
         {
-            quote: "Working with Asngad was an absolute pleasure. Their attention to detail and creative problem-solving skills are second to none. The final product exceeded all our expectations!",
+            quote: "Bekerja dengan Asngad adalah pengalaman yang sangat menyenangkan. Perhatiannya terhadap detail dan keterampilan pemecahan masalah yang kreatif tidak ada duanya. Produk akhir melebihi semua harapan kami!",
             name: "Jane Doe",
             title: "CEO, Tech Solutions Inc.",
             imageUrl: "https://i.pravatar.cc/150?u=jane"
         },
         {
-            quote: "The user interface they designed is both beautiful and incredibly intuitive. Our user engagement has skyrocketed since the launch. Highly recommended!",
+            quote: "Antarmuka pengguna yang dirancangnya indah dan sangat intuitif. Keterlibatan pengguna kami meroket sejak peluncuran. Sangat direkomendasikan!",
             name: "John Smith",
-            title: "Project Manager, Innovate Co.",
+            title: "Manajer Proyek, Innovate Co.",
             imageUrl: "https://i.pravatar.cc/150?u=john"
         },
     ];
@@ -65,7 +65,7 @@ const Testimonials: React.FC = () => {
         <section ref={sectionRef} id="testimonials" className="py-20 md:py-32 bg-secondary overflow-hidden">
             <div className={`container mx-auto px-6 fade-in-up ${isVisible ? 'is-visible' : ''}`}>
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-text-primary">
-                    What My Collaborators Say
+                    Kata Kolaborator Saya
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {testimonialsList.map((testimonial, index) => (

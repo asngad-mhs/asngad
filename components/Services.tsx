@@ -58,18 +58,18 @@ const Services: React.FC = () => {
   const services = [
     {
       icon: <CodeIcon className="w-10 h-10" />,
-      title: 'Web Development',
-      description: 'Creating high-performance, scalable, and secure web applications using modern frameworks like React, Next.js, and Vue.',
+      title: 'Pengembangan Web',
+      description: 'Menciptakan aplikasi web berkinerja tinggi, dapat diskalakan, dan aman menggunakan kerangka kerja modern seperti React, Next.js, dan Vue.',
     },
     {
       icon: <PaletteIcon className="w-10 h-10" />,
-      title: 'UI/UX Design',
-      description: 'Designing user-centric interfaces that are not only beautiful but also intuitive and easy to use, focusing on an optimal user journey.',
+      title: 'Desain UI/UX',
+      description: 'Merancang antarmuka yang berpusat pada pengguna yang tidak hanya indah tetapi juga intuitif dan mudah digunakan, dengan fokus pada perjalanan pengguna yang optimal.',
     },
     {
       icon: <MobileIcon className="w-10 h-10" />,
-      title: 'Responsive Design',
-      description: 'Ensuring your web application looks and works perfectly on all devices, from small mobile screens to large desktop displays.',
+      title: 'Desain Responsif',
+      description: 'Memastikan aplikasi web Anda terlihat dan berfungsi sempurna di semua perangkat, dari layar ponsel kecil hingga monitor desktop besar.',
     },
   ];
 
@@ -77,7 +77,7 @@ const Services: React.FC = () => {
     <section ref={sectionRef} id="services" className="py-20 md:py-32 bg-primary overflow-hidden">
       <div className={`container mx-auto px-6 fade-in-up ${isVisible ? 'is-visible' : ''}`}>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-text-primary">
-          What I Do
+          Layanan Saya
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (

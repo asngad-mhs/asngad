@@ -41,11 +41,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageUrl, title, description,
         <div className="flex items-center space-x-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-[400ms]">
             <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-text-secondary hover:text-accent transition-colors duration-300">
                 <ExternalLinkIcon className="w-5 h-5" />
-                <span>Live Demo</span>
+                <span>Demo Langsung</span>
             </a>
             <a href={codeUrl} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-text-secondary hover:text-accent transition-colors duration-300">
                 <GithubLinkIcon className="w-5 h-5" />
-                <span>Source Code</span>
+                <span>Kode Sumber</span>
             </a>
         </div>
     </div>
@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageUrl, title, description,
 const Portfolio: React.FC = () => {
     const sectionRef = useRef<HTMLElement>(null);
     const [isVisible, setIsVisible] = useState(false);
-    const [activeFilter, setActiveFilter] = useState('All');
+    const [activeFilter, setActiveFilter] = useState('Semua');
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -78,63 +78,63 @@ const Portfolio: React.FC = () => {
   const projects = [
     {
       imageUrl: 'https://picsum.photos/seed/ecom/600/400',
-      title: 'ProShop E-commerce',
-      description: 'A full-featured MERN stack online store with payment integration.',
+      title: 'E-commerce ProShop',
+      description: 'Toko online MERN stack berfitur lengkap dengan integrasi pembayaran.',
       tags: ['React', 'Node.js', 'MongoDB', 'Redux'],
-      category: 'Web App',
+      category: 'Aplikasi Web',
       liveUrl: '#',
       codeUrl: '#',
     },
     {
       imageUrl: 'https://picsum.photos/seed/dashboard/600/400',
-      title: 'Admin Data Dashboard',
-      description: 'An interactive dashboard for complex data visualization.',
+      title: 'Dasbor Data Admin',
+      description: 'Dasbor interaktif untuk visualisasi data yang kompleks.',
       tags: ['React', 'D3.js', 'Firebase', 'Material UI'],
-      category: 'Web App',
+      category: 'Aplikasi Web',
       liveUrl: '#',
       codeUrl: '#',
     },
     {
       imageUrl: 'https://picsum.photos/seed/booking/600/400',
-      title: 'Wavebnb Booking UI',
-      description: 'A sleek, modern UI clone for a popular booking application.',
+      title: 'UI Pemesanan Wavebnb',
+      description: 'Klon UI yang ramping dan modern untuk aplikasi pemesanan populer.',
       tags: ['React Native', 'UI/UX', 'Figma'],
-      category: 'UI/UX Design',
+      category: 'Desain UI/UX',
       liveUrl: '#',
       codeUrl: '#',
     },
     {
       imageUrl: 'https://picsum.photos/seed/startup/600/400',
-      title: 'Synth Landing Page',
-      description: 'A professional landing page for a tech startup, focused on conversions.',
+      title: 'Halaman Arahan Synth',
+      description: 'Halaman arahan profesional untuk startup teknologi, yang berfokus pada konversi.',
       tags: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-      category: 'Web App',
+      category: 'Aplikasi Web',
       liveUrl: '#',
       codeUrl: '#',
     },
     {
       imageUrl: 'https://picsum.photos/seed/cms/600/400',
-      title: 'Headless Blog CMS',
-      description: 'A custom headless CMS for a tech blog, built for performance.',
+      title: 'CMS Blog Tanpa Kepala',
+      description: 'CMS tanpa kepala khusus untuk blog teknologi, dibangun untuk kinerja.',
       tags: ['Vue.js', 'Strapi', 'GraphQL', 'MongoDB'],
-      category: 'Web App',
+      category: 'Aplikasi Web',
       liveUrl: '#',
       codeUrl: '#',
     },
     {
       imageUrl: 'https://picsum.photos/seed/pms/600/400',
-      title: 'KanbanFlow Manager',
-      description: 'A collaborative tool to manage tasks with drag-and-drop functionality.',
+      title: 'Manajer KanbanFlow',
+      description: 'Alat kolaboratif untuk mengelola tugas dengan fungsionalitas seret dan lepas.',
       tags: ['React', 'Redux Toolkit', 'WebSockets'],
-      category: 'Web App',
+      category: 'Aplikasi Web',
       liveUrl: '#',
       codeUrl: '#',
     },
   ];
   
-  const filters = ['All', 'Web App', 'UI/UX Design'];
+  const filters = ['Semua', 'Aplikasi Web', 'Desain UI/UX'];
 
-  const filteredProjects = activeFilter === 'All' 
+  const filteredProjects = activeFilter === 'Semua' 
     ? projects 
     : projects.filter(p => p.category === activeFilter);
 
@@ -143,9 +143,9 @@ const Portfolio: React.FC = () => {
       <div className={`container mx-auto px-6 fade-in-up ${isVisible ? 'is-visible' : ''}`}>
         <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
-                My Portfolio
+                Portofolio Saya
             </h2>
-            <p className="text-lg text-text-secondary mt-2">A selection of my recent work.</p>
+            <p className="text-lg text-text-secondary mt-2">Pilihan karya terbaru saya.</p>
         </div>
 
         <div className="flex justify-center items-center gap-2 md:gap-4 mb-12">

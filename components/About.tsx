@@ -1,3 +1,4 @@
+
 import React, { useRef, useState, useEffect } from 'react';
 
 const About: React.FC = () => {
@@ -26,7 +27,7 @@ const About: React.FC = () => {
     <section ref={sectionRef} id="about" className="py-20 md:py-32 bg-secondary overflow-hidden">
       <div className={`container mx-auto px-6 fade-in-up ${isVisible ? 'is-visible' : ''}`}>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-text-primary">
-          About Me
+          Tentang Saya
         </h2>
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
           <div className="w-full md:w-1/3 flex justify-center">
@@ -40,12 +41,12 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className="w-full md:w-2/3 text-center md:text-left">
-            <h3 className="text-2xl font-semibold text-accent mb-4">Crafting Digital Experiences</h3>
+            <h3 className="text-2xl font-semibold text-accent mb-4">Menciptakan Pengalaman Digital</h3>
             <p className="text-text-secondary text-lg mb-4">
-              I'm a passionate developer with a keen eye for design. With a strong foundation in front-end technologies like React and TypeScript, I specialize in creating intuitive and dynamic user interfaces. My goal is to merge functionality with aesthetics to deliver seamless digital products.
+              Saya seorang pengembang yang bersemangat dengan kepekaan terhadap desain. Dengan dasar yang kuat dalam teknologi front-end seperti React dan TypeScript, saya berspesialisasi dalam menciptakan antarmuka pengguna yang intuitif dan dinamis. Tujuan saya adalah menggabungkan fungsionalitas dengan estetika untuk menghasilkan produk digital yang mulus.
             </p>
             <p className="text-text-secondary text-lg">
-              When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and capturing moments through photography. Let's connect and build something amazing together!
+              Saat tidak sedang membuat kode, saya suka menjelajahi teknologi baru, berkontribusi pada proyek sumber terbuka, dan mengabadikan momen melalui fotografi. Mari terhubung dan bangun sesuatu yang luar biasa bersama!
             </p>
           </div>
         </div>

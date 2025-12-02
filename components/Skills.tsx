@@ -60,7 +60,7 @@ const Skills: React.FC = () => {
     <section ref={sectionRef} id="skills" className="py-20 md:py-32 bg-primary overflow-hidden">
       <div className={`container mx-auto px-6 fade-in-up ${isVisible ? 'is-visible' : ''}`}>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-text-primary">
-          Technologies I Use
+          Teknologi yang Saya Gunakan
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-2xl mx-auto">
           {skillsList.map((skill, index) => (

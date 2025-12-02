@@ -1,3 +1,4 @@
+
 import React, { useRef, useState, useEffect } from 'react';
 import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon, TiktokIcon, YoutubeIcon, PhoneIcon } from './SocialIcons';
 
@@ -27,17 +28,17 @@ const Contact: React.FC = () => {
     <section ref={sectionRef} id="contact" className="py-20 md:py-32 bg-primary overflow-hidden">
       <div className={`container mx-auto px-6 text-center fade-in-up ${isVisible ? 'is-visible' : ''}`}>
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-text-primary">
-          Get In Touch
+          Hubungi Saya
         </h2>
         <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
-          I'm currently available for freelance work and open to discussing new projects.
-          Whether you have a question or just want to say hi, feel free to reach out.
+          Saat ini saya tersedia untuk pekerjaan lepas dan terbuka untuk mendiskusikan proyek baru. 
+          Jika Anda memiliki pertanyaan atau hanya ingin menyapa, jangan ragu untuk menghubungi.
         </p>
         <a
           href="mailto:hello@asngad.my.id"
           className="inline-block bg-accent text-primary font-bold py-3 px-8 rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-accent/20 mb-8"
         >
-          Say Hello
+          Kirim Pesan
         </a>
 
         <div className="flex items-center justify-center gap-3 my-6 text-text-secondary">

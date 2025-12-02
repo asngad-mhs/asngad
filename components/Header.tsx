@@ -37,13 +37,13 @@ const Header: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#services', label: 'Services' },
-    { href: '#portfolio', label: 'Portfolio' },
-    { href: '#testimonials', label: 'Testimonials' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#home', label: 'Beranda' },
+    { href: '#about', label: 'Tentang' },
+    { href: '#skills', label: 'Keahlian' },
+    { href: '#services', label: 'Layanan' },
+    { href: '#portfolio', label: 'Portofolio' },
+    { href: '#testimonials', label: 'Testimonial' },
+    { href: '#contact', label: 'Kontak' },
   ];
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {

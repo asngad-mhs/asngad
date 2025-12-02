@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon, TiktokIcon, YoutubeIcon } from './SocialIcons';
 
@@ -25,7 +26,7 @@ const Footer: React.FC = () => {
             <YoutubeIcon className="w-6 h-6" />
           </a>
         </div>
-        <p>&copy; {new Date().getFullYear()} Asngad.my.id. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Asngad.my.id. Hak Cipta Dilindungi.</p>
       </div>
     </footer>
   );
